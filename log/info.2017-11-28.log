@@ -1,0 +1,30 @@
+Starting SellApplicationTests on HJJ-Computer with PID 11000 (started by Jason in D:\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Tue Nov 28 22:12:42 SGT 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Tue Nov 28 22:12:42 SGT 2017]; root of context hierarchy
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started SellApplicationTests in 3.987 seconds (JVM running for 5.465)
+info.....
+warn...
+info name:Jason
+Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Tue Nov 28 22:12:42 SGT 2017]; root of context hierarchy
+[2017-11-28 22:20:03,529][INFO][main]Starting SellApplicationTests on HJJ-Computer with PID 10888 (started by Jason in D:\sell)
+[2017-11-28 22:20:03,529][INFO][main]No active profile set, falling back to default profiles: default
+[2017-11-28 22:20:03,578][INFO][main]Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Tue Nov 28 22:20:03 SGT 2017]; root of context hierarchy
+[2017-11-28 22:20:04,239][INFO][background-preinit]HV000001: Hibernate Validator 5.3.5.Final
+[2017-11-28 22:20:05,707][INFO][main]Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Tue Nov 28 22:20:03 SGT 2017]; root of context hierarchy
+[2017-11-28 22:20:05,827][INFO][main]Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2017-11-28 22:20:05,828][INFO][main]Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2017-11-28 22:20:05,865][INFO][main]Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2017-11-28 22:20:05,866][INFO][main]Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2017-11-28 22:20:05,943][INFO][main]Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2017-11-28 22:20:06,193][INFO][main]Started SellApplicationTests in 3.563 seconds (JVM running for 4.671)
+[2017-11-28 22:20:06,276][INFO][main]info.....
+[2017-11-28 22:20:06,277][WARN][main]warn...
+[2017-11-28 22:20:06,277][INFO][main]info name:Jason
+[2017-11-28 22:20:06,284][INFO][Thread-2]Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Tue Nov 28 22:20:03 SGT 2017]; root of context hierarchy
