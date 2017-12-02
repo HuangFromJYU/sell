@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!--springboot推荐使用logback-spring.xml而不是logback.xml-->
 <!--配置日志-->
 <configuration>
     <!--ConsoleAppender的配置表示打印到控制台-->
