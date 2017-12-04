@@ -1,4 +1,4 @@
-package edu.jyu.sell.service;
+package edu.jyu.sell.service.impl;
 
 import edu.jyu.sell.entity.ProductCategory;
 import org.junit.Assert;

@@ -1,7 +1,8 @@
-package edu.jyu.sell.service;
+package edu.jyu.sell.service.impl;
 
 import edu.jyu.sell.entity.ProductCategory;
 import edu.jyu.sell.repository.ProductCategoryRepository;
+import edu.jyu.sell.service.ProductCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
