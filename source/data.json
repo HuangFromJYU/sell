@@ -1,0 +1,40 @@
+//返回给前端的json串例子
+{
+  "code": 0,
+  "msg": "成功",
+  "data": [
+    {
+      "name": "热销",
+      "type": 2,
+      "foods": [
+        {
+          "id": "123456",
+          "name": "皮蛋粥",
+          "price": 3.20,
+          "description": "很好喝的粥",
+          "icon": "http://xxxxx.jpg"
+        },
+        {
+          "id": "123459",
+          "name": "皮蛋",
+          "price": 3.20,
+          "description": "好香的呢",
+          "icon": "http://xxxxx.jpg"
+        }
+      ]
+    },
+    {
+      "name": "服饰",
+      "type": 5,
+      "foods": [
+        {
+          "id": "123457",
+          "name": "短裤",
+          "price": 3.20,
+          "description": "超短的哟",
+          "icon": "http://xxxxx.jpg"
+        }
+      ]
+    }
+  ]
+}
