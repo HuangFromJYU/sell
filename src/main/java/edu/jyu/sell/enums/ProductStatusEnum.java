@@ -1,4 +1,4 @@
-package edu.jyu.sell;
+package edu.jyu.sell.enums;
 
 import lombok.Getter;
 
