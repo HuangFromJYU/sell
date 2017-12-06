@@ -1,4 +1,4 @@
-package edu.jyu.sell.VO;
+package edu.jyu.sell.vo;
 
 import lombok.Data;
 

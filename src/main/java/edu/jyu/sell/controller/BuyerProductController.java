@@ -1,8 +1,8 @@
 package edu.jyu.sell.controller;
 
-import edu.jyu.sell.VO.ProductInfoVO;
-import edu.jyu.sell.VO.ProductCategoryVO;
-import edu.jyu.sell.VO.ResultVO;
+import edu.jyu.sell.vo.ProductInfoVO;
+import edu.jyu.sell.vo.ProductCategoryVO;
+import edu.jyu.sell.vo.ResultVO;
 import edu.jyu.sell.entity.ProductCategory;
 import edu.jyu.sell.entity.ProductInfo;
 import edu.jyu.sell.service.ProductCategoryService;
