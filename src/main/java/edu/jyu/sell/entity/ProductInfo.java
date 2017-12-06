@@ -17,11 +17,19 @@ import java.math.BigDecimal;
 public class ProductInfo {
     /**
      * 上架状态
+     * 使用枚举类ProductStatusEnum来代替状态
+     *
+     * @see edu.jyu.sell.ProductStatusEnum
      */
+    @Deprecated
     public static Integer PRODUCT_STATUS_UP = 0;
     /**
      * 下架状态
+     * 使用枚举类ProductStatusEnum来代替状态
+     *
+     * @see edu.jyu.sell.ProductStatusEnum
      */
+    @Deprecated
     public static Integer PRODUCT_STATUS_DOWN = 1;
 
     @Id
