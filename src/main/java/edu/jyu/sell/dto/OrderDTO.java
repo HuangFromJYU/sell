@@ -1,6 +1,7 @@
 package edu.jyu.sell.dto;
 
 import edu.jyu.sell.entity.OrderDetail;
+import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -11,6 +12,7 @@ import java.util.List;
  * @author Jason
  * @create 2017-12-09 10:23
  **/
+@Data
 public class OrderDTO {
     /**
      * 订单id.
