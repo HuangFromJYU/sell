@@ -2,6 +2,7 @@ package edu.jyu.sell.service.impl;
 
 import edu.jyu.sell.dto.OrderDTO;
 import edu.jyu.sell.entity.OrderDetail;
+import edu.jyu.sell.enums.OrderStatusEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -70,10 +71,16 @@ public class OrderServiceImplTest {
 
     @Test
     public void cancel() throws Exception {
+        OrderDTO orderDTO = orderService.findOne("1512792099616104532");
+        OrderDTO result = orderService.cancel(orderDTO);
+        Assert.assertEquals( OrderStatusEnum.CANCEL.getCode(),result.getOrderStatus());
     }
 
     @Test
     public void finish() throws Exception {
+        OrderDTO orderDTO = orderService.findOne("1512792099616104532");
+        OrderDTO result = orderService.finish(orderDTO);
+        Assert.assertEquals( OrderStatusEnum.FINISHED.getCode(),result.getOrderStatus());
     }
 
     @Test
