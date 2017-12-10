@@ -1,5 +1,6 @@
 package edu.jyu.sell.controller;
 
+import edu.jyu.sell.util.ResultVOUtil;
 import edu.jyu.sell.vo.ProductInfoVO;
 import edu.jyu.sell.vo.ProductCategoryVO;
 import edu.jyu.sell.vo.ResultVO;
@@ -38,8 +39,8 @@ public class BuyerProductController {
         //1. 查询所有上架商品
         List<ProductInfo> productInfos = productInfoService.findUpAll();
         //2. 查询所有上架商品所在的类目类型
-        List<Integer> categoryTypes = productInfos.stream()//
-                .map(e -> e.getCategoryType())//
+        List<Integer> categoryTypes = productInfos.stream()
+                .map(e -> e.getCategoryType())
                 .collect(Collectors.toList());
         List<ProductCategory> productCategories = categoryService.findByCategoryTypeIn(categoryTypes);
         //3. 数据封装
@@ -66,10 +67,7 @@ public class BuyerProductController {
             //=========3.2商品类目数据封装=========
             productCategoryVOList.add(productCategoryVO);
         }
-        resultVO.setCode(0);
-        resultVO.setMsg("成功");
-        resultVO.setData(productCategoryVOList);
         //=========3.1最外层数据封装=========
-        return resultVO;
+        return ResultVOUtil.success(resultVO);
     }
 }
