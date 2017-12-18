@@ -1,5 +1,6 @@
 package edu.jyu.sell.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import edu.jyu.sell.entity.OrderDetail;
 import edu.jyu.sell.util.serializer.Date2LongSerializer;
@@ -15,6 +16,8 @@ import java.util.List;
  * @create 2017-12-09 10:23
  **/
 @Data
+//@JsonInclude注解表示实体转json 为NULL或者为空不参加序列化
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderDTO {
     /**
      * 订单id.
