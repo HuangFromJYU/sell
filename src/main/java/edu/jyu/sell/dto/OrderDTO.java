@@ -1,6 +1,8 @@
 package edu.jyu.sell.dto;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import edu.jyu.sell.entity.OrderDetail;
+import edu.jyu.sell.util.serializer.Date2LongSerializer;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -57,11 +59,13 @@ public class OrderDTO {
     /**
      * 创建时间.
      */
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date createTime;
 
     /**
      * 更新时间.
      */
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
     /**
      * 订单明细.
