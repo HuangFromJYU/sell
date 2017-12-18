@@ -30,6 +30,8 @@ public enum ResultEnum {
     ORDER_PAY_STATUS_ERROR(17,"订单支付状态错误"),
 
     CART_EMPTY(18,"订单支付状态错误"),
+
+    ORDER_OWNER_ERROR(19,"该订单不属于当前用户")
     ;
 
     /**
