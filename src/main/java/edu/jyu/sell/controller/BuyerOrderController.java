@@ -19,6 +19,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import javax.xml.transform.Result;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -72,6 +73,22 @@ public class BuyerOrderController {
         }
         PageRequest request = new PageRequest(page,size);
         Page<OrderDTO> orderDTOPage = orderService.findList(openid, request);
+
+
         return ResultVOUtil.success(orderDTOPage.getContent());
     }
+
+    /**
+     * 订单详情
+     */
+
+    @GetMapping("/detail")
+    public ResultVO<OrderDTO> detail(@RequestParam("openid") String openid,
+                                     @RequestParam("orderId") String orderId){
+        //TODO 只能查自己的订单
+        OrderDTO orderDTO = orderService.findOne(orderId);
+        return ResultVOUtil.success(orderDTO);
+
+    }
+
 }

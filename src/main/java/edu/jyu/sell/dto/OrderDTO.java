@@ -17,7 +17,7 @@ import java.util.List;
  **/
 @Data
 //@JsonInclude注解表示实体转json 为NULL或者为空不参加序列化
-@JsonInclude(JsonInclude.Include.NON_NULL)
+//@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderDTO {
     /**
      * 订单id.
