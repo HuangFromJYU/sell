@@ -41,6 +41,9 @@ public class BuyerOrderController {
 
     /**
      * 创建订单
+     * @param orderForm
+     * @param bindingResult
+     * @return
      */
     @PostMapping("/create")
     public ResultVO<Map<String, String>> create(@Valid OrderForm orderForm, BindingResult bindingResult) {
@@ -62,6 +65,10 @@ public class BuyerOrderController {
 
     /**
      * 订单列表
+     * @param openid
+     * @param page
+     * @param size
+     * @return
      */
     @GetMapping("/list")
     public ResultVO<List<OrderDTO>> list(@RequestParam("openid") String openid,
@@ -80,8 +87,10 @@ public class BuyerOrderController {
 
     /**
      * 订单详情
+     * @param openid
+     * @param orderId
+     * @return
      */
-
     @GetMapping("/detail")
     public ResultVO<OrderDTO> detail(@RequestParam("openid") String openid,
                                      @RequestParam("orderId") String orderId){
@@ -91,4 +100,18 @@ public class BuyerOrderController {
 
     }
 
+    /**
+     * 取消订单
+     * @param openid
+     * @param orderId
+     * @return
+     */
+    @PostMapping("/cancel")
+    public ResultVO cancel(@RequestParam("openid") String openid,
+                           @RequestParam("orderId") String orderId){
+        //TODO 只能取消自己的订单
+        OrderDTO orderDTO = orderService.findOne(orderId);
+        orderService.cancel(orderDTO);
+        return ResultVOUtil.success();
+    }
 }
